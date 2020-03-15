@@ -26,5 +26,6 @@ if __name__ == "__main__":
     try:
         from test_server import test_file1_method1
         test_file1_method1()
+        print("test pass")
     except ImportError:
         print("error for manage.py")

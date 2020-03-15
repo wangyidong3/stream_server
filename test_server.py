@@ -6,6 +6,7 @@ def test_file1_method1():
 	y=6
 	assert x+1 == y,"test failed"
 	# assert x == y,"test failed"
+	print("pytest run ok")
 
 
 def test_file1_method2():

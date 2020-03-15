@@ -1,4 +1,4 @@
-import pytest
+# import pytest
 
 
 def test_file1_method1():

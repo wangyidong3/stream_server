@@ -29,4 +29,4 @@ if __name__ == "__main__":
         print("test pass")
     except Exception as e:
         # print("error for manage.py")
-        print("error from try: "  + "\r\n[Error] " + str(e.message))
+        print("[Error] " + str(e))

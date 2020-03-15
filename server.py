@@ -42,8 +42,6 @@ def test_server():
 	assert x+1 == y,"test successed"
 	# assert x == y,"test failed"
 
-
-
 if __name__ == '__main__':
     print("Waiting connections...")
     socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

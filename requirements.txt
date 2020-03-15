@@ -4,3 +4,4 @@ coverage
 pytest
 opencv-python
 numpy
+pytest-circleci

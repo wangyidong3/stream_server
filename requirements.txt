@@ -4,4 +4,3 @@ coverage
 pytest
 opencv-python
 numpy
-base64

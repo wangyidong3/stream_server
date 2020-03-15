@@ -42,6 +42,21 @@ def test_server():
 	assert x+1 == y,"test successed"
 	# assert x == y,"test failed"
 
+def connection():
+
+    print("Waiting connections...")
+    socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket_server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    socket_server.bind((SERVER_IP, SERVER_PORT))
+    socket_server.listen(MAX_NUM_CONNECTIONS)
+    while True:
+        (conn, (ip, port)) = socket_server.accept()
+        thread = ConnectionPool(ip, port, conn)
+        thread.start()
+    socket_server.close()
+    camera.release()
+    
+
 if __name__ == '__main__':
     print("Waiting connections...")
     socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -54,3 +69,5 @@ if __name__ == '__main__':
         thread.start()
     socket_server.close()
     camera.release()
+
+

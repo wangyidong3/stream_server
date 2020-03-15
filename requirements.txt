@@ -5,3 +5,4 @@ pytest
 socket
 opencv-python
 numpy
+base64

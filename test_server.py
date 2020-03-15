@@ -18,4 +18,3 @@ def test_file1_method2():
 def test_connection():
 	pass
 
-def test_

@@ -2,7 +2,6 @@ flake8
 python-coveralls
 coverage
 pytest
-socket
 opencv-python
 numpy
 base64

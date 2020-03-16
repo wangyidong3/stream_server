@@ -33,13 +33,13 @@ class ConnectionPool(Thread):
                 print(count, len(data))
                 count += 1
         except Exception as e:
-            print "Connection lost with " + self.ip + ":" + str(self.port) + "\r\n[Error] " + str(e.message)
+            print("Connection lost with " + self.ip + ":" + str(self.port) + "\r\n[Error] " + str(e.message))
         self.conn.close()
 
 def test_server():
     x=5
-	y=6
-	assert x+1 == y,"test successed"
+    y=6
+    assert x+1 == y,"test successed"
 	# assert x == y,"test failed"
 
 def connection():
